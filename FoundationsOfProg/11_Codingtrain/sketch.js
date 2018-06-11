@@ -5,7 +5,7 @@ function setup() {
 }
 
 function draw() {
- backround(25);
+ background(25);
  ellipse(200, 200, 50, 50); 
  console.log("draw function!");
 }
