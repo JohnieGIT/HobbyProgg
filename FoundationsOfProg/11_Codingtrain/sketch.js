@@ -1,11 +1,33 @@
+//3.4: Boolean Variables - p5.js Tutorial
+
+var on = false;
 function setup() {
-	createCanvas(400, 400);
-	print("setup function!")
+	createCanvas(600, 400);
+	
 
 }
 
 function draw() {
- background(25);
- ellipse(200, 200, 50, 50); 
- console.log("draw function!");
+
+if (on) {
+	background(0,255,0);
+} else {
+	background(0);
 }
+
+
+ stroke(255);
+ strokeWeight(4);
+ noFill();
+rectMode(CENTER);
+rect(300, 200, 100, 100);
+}
+
+ 	function mousePressed() {
+ 		 if (mouseX > 250 && mouseX < 350 && mouseY > 150 && mouseY < 250) {
+ 		 	on = !on;
+}
+ }
+
+
+ 
